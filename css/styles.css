@@ -1,0 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    height: auto;
+    width: auto;
+    background-image: url(../images/solid-body.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:  100% 100%;
+}
+
+.topnav {
+    background-color: blue;
+    padding-left: 20%;
+    height: 40px;
+}
