@@ -9,10 +9,32 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:  100% 100%;
+    color: rgb(250, 248, 248);
+}
+a img {
+    height: 400%;
+    width: 40px;
+    padding-bottom: 50px;
+
+}
+.topnav a:hover {
+    border-bottom: 3px solid red;
+    padding-left: 80px;
 }
 
-.topnav {
-    background-color: blue;
-    padding-left: 20%;
-    height: 40px;
+li {
+    margin-right: 60px;
 }
+.nav2 li {
+    margin-right: 20px;
+}
+
+
+#slideshow { 
+    position: relative; 
+    width: 40px; 
+    height: 40px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+  }
+  
+  
