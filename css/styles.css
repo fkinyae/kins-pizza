@@ -196,6 +196,14 @@ li {
     background: rgba(0, 0, 0, 0.788);
     height: 20px;
 }
+#contact {
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    font-family: 'Benne', serif;
+    padding-top: 5px;
+
+}
 /* Styling the area of the slides */
 #slideshow {
     overflow: hidden;
