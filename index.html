@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <title>Kins-Pizza.</title>
 </head>
 <body>
-    <div class="container">
 
-   <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+   <nav class="navbar navbar-default navbar-fixed-top" >
             <a class="navbar-brand" href="#">
-                    <img src="./images/pizza-logo.jpg" alt="">
+                <div id="kin">
+                   <p><strong>Kins' Pizza.</strong></p>
+                </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,37 +27,63 @@
     
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto topnav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
+                        <a class="nav-link" href="#about-us">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
+                        <a class="nav-link" href="#menu">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Order</a>
+                        <a class="nav-link" href="#order">Order</a>
                     </li>
                     
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
-                    
+      
                 </ul>
         </nav>   
-        <div class="home"> 
-            <h2>WELCOME</h2>  
-            <h2>TO KINS' PIZZA PLACE.</h2>  
-            <p>THE RIGHT SLICE AT THE RIGHT PRICE.</p>   
-        </div>
+        
+            <div id="slideshow">
+                <div class="slide-wrapper">
+              
+                  <!-- Define each of the slides
+                     and write the content -->
+                  <div class="slide">
+                    <img src="./images/pizza1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Welcome To Kins' Pizza.</h3>
+                        <p>“Time is money, money is power, power is pizza, and pizza is knowledge.”</p>
+                      </div>      
+                  </div>
+                  <div class="slide">
+                    <img src="./images/pizza2.jpg" alt="">
+                    
+                  </div>
+                  <div class="slide">
+                    <img src="./images/pizza3.jpg" alt="">
+                    
+                  </div>
+                  <div class="slide">
+                    <h1 class="slide-number">
+                    </h1>
+                    <img src="./images/pizza4.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <h1 class="slide-number">
+                    </h1>
+                    <img src="./images/pizza5.jpg" alt="">
+                  </div>
+                </div>
+              </div>  
 
         <div id="about-us">
 
-       
-
         <div class="controls-top text-center"> 
-            <h2>About Us</h2>
+            <h2> <strong>About Us</strong></h2>
         
         <div class="container-fluid section" id="about">
             <div class="col-md-12 d-flex flex-xs-column">
@@ -64,18 +94,123 @@
               </div>
               <div class="col-md-6 align-items-center">
                 <div class="word">
+                    <strong>
                     <p>Welcome to Kins' Pizza for all types of delicious Pizza.</p>
                     <p>“Time is money, money is power, power is pizza, and pizza is knowledge, let’s go!” – Aubrey Plaza</p>
                     <p>Kins' pizza has been in operation for over two decades now. Preparing and delivering one of the most delicious and quality pizza you will ever consume.</p>
                     <p>We are proud winners of different competitions in the food industry for our quality work.</p>
                     <p>Kins' Pizza has expanded over that period and created a big empire of pizza shops in the whole country, we can now boast of over twenty pizza shops in different locations.</p>
-                    <p>Welcome, and hope you enjoy our services.</p>   
+                    <p>Welcome, and hope you enjoy our services.</p>  </strong> 
                 </div>
               </div>
             </div>
         </div>
     </div> 
-    </div>           
-        
+    </div>  
+    <div id="menu">
+        <h2><strong>Our Pizza Menu.</strong></h2>
+        <div class="row">
+            <div class="col-md-4" >
+                <h3><strong>Peri-peri Chicken</strong></h3>
+                <p>Spicy peri-peri chicken</p>
+                <div class="col-md-8">
+                <img class="pizza" src="./images/menu/periperi.jpeg" alt="">
+                </div>
+                <div class="col-md-4">
+                    <p>Regular:Ksh.500</p>
+                    <p>Medium:Ksh.750</p>
+                    <p>Large:Ksh.750</p>
+                    <p>Mega:Ksh.1150</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4" >
+                <h3><strong>Regina</strong></h3>
+                    <p>sandwich beef, mushroom</p>
+                    <div class="col-md-8">
+                        <img class="pizza" src="./images/menu/regina.jpeg" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Regular:Ksh.600</p>
+                        <p>Medium:Ksh.750</p>
+                        <p>Large:Ksh.950</p>
+                        <p>Mega:Ksh.1200</p>
+                    </div>
+
+
+
+            </div>
+
+            <div class="col-md-4" >
+                <h3><strong>BBQ Steak</strong></h3>
+                <p>marinated bbq steak</p>
+                <div class="col-md-8">
+                    <img class="pizza" src="./images/menu/bbq.jpeg" alt="">
+                </div>
+                <div class="col-md-4">
+                        <p>Regular:Ksh.550</p>
+                        <p>Medium:Ksh.650</p>
+                        <p>Large:Ksh.850</p>
+                        <p>Mega:Ksh.1000</p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-md-4" >
+                <h3><strong>Boerewors</strong></h3>
+                <p>beef mince, fresh tomato, fresh onion</p>
+                <div class="col-md-8">
+                    <img class="pizza" src="./images/menu/boerewors.jpg" alt="">
+                </div>
+                <div class="col-md-4">
+                        <p>Regular:Ksh.400</p>
+                        <p>Medium:Ksh.550</p>
+                        <p>Large:Ksh.700</p>
+                        <p>Mega:Ksh.950</p>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-4" >
+                <h3><strong>Chicken & Mushroom</strong></h3>
+                <p>succulent bbq chicken, mushroom, creamy mayo</p>
+                <div class="col-md-8">
+                    <img class="pizza" src="./images/menu/mushroom.jpeg" alt="">
+                </div>
+                <div class="col-md-4">
+                    <p>Regular:Ksh.450</p>
+                    <p>Medium:Ksh.550</p>
+                    <p>Large:Ksh.850</p>
+                    <p>Mega:Ksh.1050</p>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-4" >
+                <h3><strong>Chicken Tikka</strong></h3>
+                <p>Marinated tikka chicken, green pepper, onion</p>
+                <div class="col-md-8">
+                    <img class="pizza" src="./images/menu/tikka.jpeg" alt="">
+                </div>
+                <div class="col-md-4">
+                        <p>Regular:Ksh.700</p>
+                        <p>Medium:Ksh.850</p>
+                        <p>Large:Ksh.1000</p>
+                        <p>Mega:Ksh.1250</p>
+                </div>
+            </div>
+        </div>        
+    </div> 
+    <div id="order">
+
+    </div>               
 </body>
 </html>
