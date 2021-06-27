@@ -111,7 +111,7 @@
         <h2><strong>Our Pizza Menu.</strong></h2>
         <div class="row">
             <div class="col-md-4" >
-                <h3><strong>Peri-peri Chicken</strong></h3>
+                <h4><strong>Peri-peri Chicken</strong></h4>
                 <p>Spicy peri-peri chicken</p>
                 <div class="col-md-8">
                 <img class="pizza" src="./images/menu/periperi.jpeg" alt="">
@@ -127,7 +127,7 @@
             </div>
 
             <div class="col-md-4" >
-                <h3><strong>Regina</strong></h3>
+                <h4><strong>Regina</strong></h4>
                     <p>sandwich beef, mushroom</p>
                     <div class="col-md-8">
                         <img class="pizza" src="./images/menu/regina.jpeg" alt="">
@@ -144,7 +144,7 @@
             </div>
 
             <div class="col-md-4" >
-                <h3><strong>BBQ Steak</strong></h3>
+                <h4><strong>BBQ Steak</strong></h4>
                 <p>marinated bbq steak</p>
                 <div class="col-md-8">
                     <img class="pizza" src="./images/menu/bbq.jpeg" alt="">
@@ -163,7 +163,7 @@
         <div class="row">
 
             <div class="col-md-4" >
-                <h3><strong>Boerewors</strong></h3>
+                <h4><strong>Boerewors</strong></h4>
                 <p>beef mince, fresh tomato, fresh onion</p>
                 <div class="col-md-8">
                     <img class="pizza" src="./images/menu/boerewors.jpg" alt="">
@@ -179,7 +179,7 @@
             </div>
 
             <div class="col-md-4" >
-                <h3><strong>Chicken & Mushroom</strong></h3>
+                <h4><strong>Chicken & Mushroom</strong></h4>
                 <p>succulent bbq chicken, mushroom, creamy mayo</p>
                 <div class="col-md-8">
                     <img class="pizza" src="./images/menu/mushroom.jpeg" alt="">
@@ -195,7 +195,7 @@
             </div>
 
             <div class="col-md-4" >
-                <h3><strong>Chicken Tikka</strong></h3>
+                <h4><strong>Chicken Tikka</strong></h4>
                 <p>Marinated tikka chicken, green pepper, onion</p>
                 <div class="col-md-8">
                     <img class="pizza" src="./images/menu/tikka.jpeg" alt="">
@@ -210,7 +210,58 @@
         </div>        
     </div> 
     <div id="order">
+        <div class="row">
+            <h2><strong>Order Summary:</strong></h2>
+            <div class="col-md-6">
+                <h2><strong>Please Place Your Order here:..</strong></h2>
+                <form action="">
+                    <p><h4><strong>Select Your Favorite Pizza:-</strong></h4></p>
+                        <select id="pizzas"  name="pizza">
+                            <option value="periperi">Peri-peri Chicken</option>
+                            <option value="regina">Regina Pizza</option>
+                            <option value="bbq">BBQ Steak</option>
+                            <option value="boerewors">Boerewors Pizza</option>
+                            <option value="mushroom">Chicken & Mushroom</option>
+                            <option value="tikka">Chicken Tikka</option>
+                          </select>
+                          <br>
+                          <p><h4><strong>Choose Your Desired Size:-</strong></h4></p>
+                          <select id="size" name="size">
+                            <option value="regular">Regular</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="mega">Mega</option>
+                          </select>
+                          <br>
+                          <p><h4><strong>Choose Your Best Toppings:-</strong></h4></p>
+                          <select id="topping" name="topping">
+                            <option value="regular">Regular</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="mega">Mega</option>
+                          </select>
+                          <p><h4><strong>Choose Your Favorite Crust:-</strong></h4></p>
+                          <select id="crust" name="crust">
+                            <option value="regular">Regular</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="mega">Mega</option>
+                          </select>
+
+                </form>
+                
+
+            </div>
+            <div class="col-md-6">
+                <h4><strong>Your Order Summary:...</strong></h4>
+
+            </div>
+
+        </div>
 
     </div>               
 </body>
+<footer>
+    <p> <strong>Kins' Pizza @Copyright 2021  </strong></p>
+</footer>
 </html>
