@@ -4,7 +4,7 @@ html {
 body {
     height: auto;
     width: auto;
-    background-image: url(../images/solid-body.png);
+    background-image: url(../images/pizza3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -17,36 +17,128 @@ a img {
     padding-bottom: 50px;
 
 }
+.topnav {
+    position: sticky;
+}
 .topnav a:hover {
-    border-bottom: 3px solid red;
-    padding-left: 80px;
+    border-bottom: 3px solid white;
+    font-size: large;
+    
+    background-color: white;
+
+}
+.navbar {
+    background-color: #2d2d30;
+    opacity: 4;
+    font-size: 15px;
+    
 }
 
 li {
     margin-right: 100px;
+    color:  #2d2d30;
 }
 .nav2 li {
     margin-right: 60px;
 }
+#kin {
+    font-family: 'Benne', serif;
+    color: red;
+    font-size: 35px;
+    text-shadow: 2px 2px black;
+}
+#kin {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
 
-.home {
-    background-image: url(../images/pizza2.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+ .home {
+     
     color: white;
     text-align: center;
     padding-top: 20%;
     padding-bottom: 16%;
-}
+} 
+
 
 #about-us {
+    font-family: 'Benne', serif;
     background-color: white;
     color: black;
     text-align: center;
     padding-top: 2%;
-    margin-top: 5%;
-    padding-bottom: 5%;
+    margin-top: 10px;
+    padding-bottom: 5px;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -59,10 +151,149 @@ li {
     width: 100%;
     padding-top: 10%;
     padding-bottom: 10%;
+    font-size: 16.5px;   
 }
+#menu {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: aqua;
+    font-family: 'Benne', serif;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: black;
 
 
+}
+.pizza {
+    height: 130px;
+    width: 150px;
+}
+/* Styling the area of the slides */
+#slideshow {
+    overflow: hidden;
+    height: 565px;
+    width: 1138px;
+    margin-bottom: 5%;
+  }
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        font-family: 'Benne', serif;
+   }
+     .carousel-caption h3 {
+         color: #fff !important;
+         font-size: 25px;
+         font-family: 'Benne', serif;
+     }
+     .carousel-caption {
+        -webkit-animation: flicker-1 2s linear infinite both;
+	        animation: flicker-1 2s linear infinite both;
+    }
+    @-webkit-keyframes flicker-1 {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        41.99% {
+          opacity: 1;
+        }
+        42% {
+          opacity: 0;
+        }
+        43% {
+          opacity: 0;
+        }
+        43.01% {
+          opacity: 1;
+        }
+        47.99% {
+          opacity: 1;
+        }
+        48% {
+          opacity: 0;
+        }
+        49% {
+          opacity: 0;
+        }
+        49.01% {
+          opacity: 1;
+        }
+      }
+      @keyframes flicker-1 {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        41.99% {
+          opacity: 1;
+        }
+        42% {
+          opacity: 0;
+        }
+        43% {
+          opacity: 0;
+        }
+        43.01% {
+          opacity: 1;
+        }
+        47.99% {
+          opacity: 1;
+        }
+        48% {
+          opacity: 0;
+        }
+        49% {
+          opacity: 0;
+        }
+        49.01% {
+          opacity: 1;
+        }
+      }
+      
+  /* Style each of the sides 
+  with a fixed width and height */
+  .slide {
+    float: left;
+    height: 560px;
+    width: 728px;  
+  }
+  .slide img {
+      height: 100%;
+  }
 
+  /* Add animation to the slides */
+  .slide-wrapper {
 
-  
-  
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(728px * 4); 
+      
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 10s ease infinite;
+  }
+ 
+
+  /* Define the animation 
+  for the slideshow */
+  @keyframes slide {
+
+    /* Calculate the margin-left for 
+    each of the slides */
+    20% {
+      margin-left: 0px;
+    }
+
+    40% {
+      margin-left: calc(-728px * 1);
+    }
+
+    60% {
+      margin-left: calc(-728px * 2);
+    }
+
+    80% {
+      margin-left: calc(-728px * 3);
+    }
+  }
