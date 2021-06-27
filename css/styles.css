@@ -136,9 +136,9 @@ li {
     background-color: white;
     color: black;
     text-align: center;
-    padding-top: 2%;
-    margin-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin-top: 15px;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -168,6 +168,33 @@ li {
 .pizza {
     height: 130px;
     width: 150px;
+}
+
+#order {
+    background: rgba(0, 0, 0, 0.788);
+    margin-top: -45px;
+    text-align: center;
+    height: 400px;
+    margin-bottom: 30px;
+    font-family: 'Benne', serif;
+
+}
+
+#pizzas {
+    background: rgba(0, 0, 0, 0.788);
+    height: 20px;
+}
+#size {
+    background: rgba(0, 0, 0, 0.788);
+    height: 20px;
+}
+#crust {
+    background: rgba(0, 0, 0, 0.788);
+    height: 20px;
+}
+#topping {
+    background: rgba(0, 0, 0, 0.788);
+    height: 20px;
 }
 /* Styling the area of the slides */
 #slideshow {
@@ -296,4 +323,16 @@ li {
     80% {
       margin-left: calc(-728px * 3);
     }
+  }
+  footer {
+      background-color: greenyellow;
+      height: 15px;
+      font-family: 'Benne', serif;
+      color: black;
+      text-align: center;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+     width: 100%;
+
   }
