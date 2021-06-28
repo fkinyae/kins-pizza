@@ -4,7 +4,7 @@ html {
 body {
     height: auto;
     width: 100%;
-    background-image: url(../images/pizza3.jpg);
+    background-image: url(../images/gallery/pizza3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -174,11 +174,11 @@ li {
     background: rgba(0, 0, 0, 0.788);
     margin-top: -45px;
     text-align: center;
-    height: 400px;
+    height: 600px;
     margin-bottom: 5px;
     font-family: 'Benne', serif;
     padding-top: 3%;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 
 }
 
@@ -227,6 +227,15 @@ li {
     width: 1138px;
     margin-bottom: 5%;
   }
+  button#btn-submit {
+    margin-left: 25%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+}
+
   .carousel-caption {
     background: rgba(0, 0, 0, 0.5);
         font-size: 20px;
@@ -322,7 +331,7 @@ li {
       
     /* Specify the animation with the
     duration and speed */
-    animation: slide 10s ease infinite;
+    animation: slide 20s ease infinite;
   }
  
 

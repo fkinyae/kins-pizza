@@ -15,6 +15,7 @@
 </head>
 <body>
 
+
    <nav class="navbar navbar-default navbar-fixed-top" >
             <a class="navbar-brand" href="#">
                 <div id="kin">
@@ -28,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto topnav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about-us">About Us</a>
@@ -90,7 +91,7 @@
                     <img src="./images/gallery/pizza9.jpg" alt="">
                   </div>
                 </div>
-              </div>  
+              </div>       
 
         <div id="about-us">
 
@@ -222,81 +223,81 @@
         </div>        
     </div> 
     <div id="order">
+        <h2><strong>Place Your Order:..</strong></h2>
         <div class="row">
-            <h2><strong>Order Summary:</strong></h2>
             <div class="col-md-8">
-                <h2><strong>Please Place Your Order here:..</strong></h2>
-                <div class="col-md-8">
-
-                <form action="">
+                <div class="col-md-6">
                     <p><h4><strong>Select Your Favorite Pizza:-</strong></h4></p>
-                        <select id="pizzas"  name="pizza">
-                            <option value="periperi">Peri-peri Chicken</option>
-                            <option value="regina">Regina Pizza</option>
-                            <option value="bbq">BBQ Steak</option>
-                            <option value="boerewors">Boerewors Pizza</option>
-                            <option value="mushroom">Chicken & Mushroom</option>
-                            <option value="tikka">Chicken Tikka</option>
-                          </select>
-                          <br>
-                          <p><h4><strong>Choose Your Desired Size:-</strong></h4></p>
-                          <select id="size" name="size">
-                            <option value="regular">Regular</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="mega">Mega</option>
-                          </select>
-                          <br>
-                          <p><h4><strong>Choose Your Best Toppings:-</strong></h4></p>
-                          <select id="topping" name="topping">
-                            <option value="pepperoni">Pepperoni</option>
-                            <option value="cheese">Cheese</option>
-                            <option value="bacon">Bacon</option>
-                            <option value="sausage">Sausage</option>
-                            <option value="pineapple">Pineapple</option>
-                          </select>
-                          <p><h4><strong>Choose Your Favorite Crust:-</strong></h4></p>
-                          <select id="crust" name="crust">
-                            <option value="chicago">Chicago Deep Dish</option>
-                            <option value="sicilian">Sicilian Style</option>
-                            <option value="thin">Thin Crust</option>
-                            <option value="bagels">Pizza Bagels</option>
-                            <option value="bread">Flat Bread</option>
-                          </select>
-                          
+                             <select id="pizzas"  name="pizza">
+                                <option value="periperi">Peri-peri Chicken</option>
+                                <option value="regina">Regina Pizza</option>
+                                <option value="bbq">BBQ Steak</option>
+                                <option value="boerewors">Boerewors Pizza</option>
+                                <option value="mushroom">Chicken & Mushroom</option>
+                                <option value="tikka">Chicken Tikka</option>
+                             </select>
+                             <br>
+                             <p><h4><strong>Choose Your Best Toppings:-</strong></h4></p>
+                             <select id="topping" name="topping">
+                               <option value="pepperoni">Pepperoni</option>
+                               <option value="cheese">Cheese</option>
+                               <option value="bacon">Bacon</option>
+                               <option value="sausage">Sausage</option>
+                               <option value="pineapple">Pineapple</option>
+                             </select>
+                            
+                </div>
+                <div class="col-md-6">
+                    <p><h4><strong>Choose Your Desired Size:-</strong></h4></p>
+                            <select id="size" name="size">
+                                <option value="regular">Regular</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                                <option value="mega">Mega</option>
+                            </select>
+                            <p><h4><strong>Choose Your Favorite Crust:-</strong></h4></p>
+                            <select id="crust" name="crust">
+                                <option value="chicago">Chicago Deep Dish</option>
+                                <option value="sicilian">Sicilian Style</option>
+                                <option value="thin">Thin Crust</option>
+                                <option value="bagels">Pizza Bagels</option>
+                                <option value="bread">Flat Bread</option>
+                            </select>
 
-                </form>
-            </div>
+                            <p><h4><strong>Select Your Mode of Delivery:-</strong></h4></p>
+                                <label class="containers">Home Delivery:-
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  
+                                  <label class="containers">Restaurant Pickup:-
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
 
-                <div class="col-md-4">
-                    <p><h4><strong>Totals For Pizza Only:-</strong></h4></p>
-                    <div id="pizzaonly">
-
-                    </div>
-                    <p><h4><strong>Ksh. For Topping Only:-</strong></h4></p>
-                    <div id="toppingonly">
-
-                    </div>
-                    <p><h4><strong>Totals For Crust Only:-</strong></h4></p>
-                    <div id="crustaonly">
-
-                    </div>
+                            </p>
+                            
 
                 </div>
                 
-
+                        
             </div>
+
+            
             <div class="col-md-4">
                 <h4><strong>Your Order Summary:...</strong></h4>
                 <div id="summary">
 
-                </div>
-
+            </div>
             </div>
 
         </div>
+        <div class="row">
+            <button id="btn-submit" type="submit" class="btn btn-primary col-md-1"  onclick="msg()">CheckOut</button>
+        </div>
 
-    </div> 
+    </div>
+    
     <div id="contact">
         <h2><strong>CONTACT US.</strong></h2>
         <div class="row">
