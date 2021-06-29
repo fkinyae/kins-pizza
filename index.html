@@ -237,24 +237,25 @@
                                 <option value="tikka">Chicken Tikka</option>
                              </select>
                              <br>
-                             <p><h4><strong>Choose Your Best Toppings:-</strong></h4></p>
-                             <select id="topping" name="topping">
-                               <option value="pepperoni">Pepperoni</option>
-                               <option value="cheese">Cheese</option>
-                               <option value="bacon">Bacon</option>
-                               <option value="sausage">Sausage</option>
-                               <option value="pineapple">Pineapple</option>
-                             </select>
-                            
-                </div>
-                <div class="col-md-6">
-                    <p><h4><strong>Choose Your Desired Size:-</strong></h4></p>
+                             <p><h4><strong>Choose Your Desired Size:-</strong></h4></p>
                             <select id="size" name="size">
                                 <option value="regular">Regular</option>
                                 <option value="medium">Medium</option>
                                 <option value="large">Large</option>
                                 <option value="mega">Mega</option>
                             </select>
+                            <p><h4><strong>Choose Your Best Toppings:-</strong></h4></p>
+                            <select id="topping" name="topping">
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="cheese">Cheese</option>
+                            <option value="bacon">Bacon</option>
+                            <option value="sausage">Sausage</option>
+                            <option value="pineapple">Pineapple</option>
+                            </select>
+                            
+                </div>
+                <div class="col-md-6">
+
                             <p><h4><strong>Choose Your Favorite Crust:-</strong></h4></p>
                             <select id="crust" name="crust">
                                 <option value="chicago">Chicago Deep Dish</option>
@@ -264,19 +265,13 @@
                                 <option value="bread">Flat Bread</option>
                             </select>
 
-                            <p><h4><strong>Select Your Mode of Delivery:-</strong></h4></p>
-                                <label class="containers">Home Delivery:-
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
-                                  </label>
-                                  
-                                  <label class="containers">Restaurant Pickup:-
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                  </label>
+                            <h4><strong>Enter Number Of Pizza:</strong></h4>
+                            <input type="number" id="pizza_no" name="pizza_no" value="pizza_no" placeholder="Pieces Of pizza needed..">
 
-                            </p>
-                            
+                            <h4><strong>Select Your Mode of Delivery:-</strong></h4>
+                            <input type="radio" id="hme" name="delivery" value="home">Home Delivery.
+                            <input type="radio" id="pickup" name="delivery" value="pickup">Pick In-Person.
+                                       
 
                 </div>
                 
@@ -285,15 +280,16 @@
 
             
             <div class="col-md-4">
-                <h4><strong>Your Order Summary:...</strong></h4>
                 <div id="summary">
+                    <h4><strong>Your Order Summary:...</strong></h4>
+
 
             </div>
             </div>
 
         </div>
         <div class="row">
-            <button id="btn-submit" type="submit" class="btn btn-primary col-md-1"  onclick="msg()">CheckOut</button>
+            <button id="btn-submit" type="submit" class="btn btn-primary col-md-1">CheckOut</button>
         </div>
 
     </div>
