@@ -174,7 +174,7 @@ li {
     background: rgba(0, 0, 0, 0.788);
     margin-top: -45px;
     text-align: center;
-    height: 600px;
+    height: 400px;
     margin-bottom: 5px;
     font-family: 'Benne', serif;
     padding-top: 3%;
@@ -184,19 +184,28 @@ li {
 
 #pizzas {
     background: rgba(0, 0, 0, 0.788);
-    height: 20px;
-}
+    height: 35px;
+    width: 185px;
+  }
 #size {
     background: rgba(0, 0, 0, 0.788);
-    height: 20px;
-}
+    height: 35px;
+    width: 185px;
+  }
 #crust {
     background: rgba(0, 0, 0, 0.788);
-    height: 20px;
-}
+    height: 35px;
+    width: 185px;
+  }
 #topping {
     background: rgba(0, 0, 0, 0.788);
-    height: 20px;
+    height: 35px;
+    width: 185px;
+  }
+#pizza_no {
+  background: rgba(0, 0, 0, 0.788);
+  height: 35px;
+  width: 185px;
 }
 #contact {
     text-align: center;
@@ -211,14 +220,6 @@ li {
 #feedback {
     padding-right: 3%;
     background: transparent;
-}
-#btn-submit {
-    margin-left: 20%;
-    margin-bottom: 2%;
-    margin-top: -4%;
-    height: 30px;
-    width: 100px;
-    font-size: 18px;
 }
 /* Styling the area of the slides */
 #slideshow {
