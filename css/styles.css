@@ -218,6 +218,9 @@ li {
     width: 100%;
 
 }
+#msg {
+  color: crimson;
+}
 #feedback {
     padding-right: 3%;
     background: transparent;
