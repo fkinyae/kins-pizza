@@ -229,6 +229,7 @@
                 <div class="col-md-6">
                     <p><h4><strong>Select Your Favorite Pizza:-</strong></h4></p>
                              <select id="pizzas"  name="pizza">
+                                <option>Select Pizza</option>
                                 <option value="periperi">Peri-peri Chicken</option>
                                 <option value="regina">Regina Pizza</option>
                                 <option value="bbq">BBQ Steak</option>
@@ -239,6 +240,7 @@
                              <br>
                              <p><h4><strong>Choose Your Desired Size:-</strong></h4></p>
                             <select id="size" name="size">
+                                <option>Select Size</option>
                                 <option value="regular">Regular</option>
                                 <option value="medium">Medium</option>
                                 <option value="large">Large</option>
@@ -246,6 +248,7 @@
                             </select>
                             <p><h4><strong>Choose Your Best Toppings:-</strong></h4></p>
                             <select id="topping" name="topping">
+                                <option>Select Topping</option>
                             <option value="pepperoni">Pepperoni</option>
                             <option value="cheese">Cheese</option>
                             <option value="bacon">Bacon</option>
@@ -258,6 +261,7 @@
 
                             <p><h4><strong>Choose Your Favorite Crust:-</strong></h4></p>
                             <select id="crust" name="crust">
+                                <option>Select Crust</option>
                                 <option value="chicago">Chicago Deep Dish</option>
                                 <option value="sicilian">Sicilian Style</option>
                                 <option value="thin">Thin Crust</option>
@@ -266,7 +270,7 @@
                             </select>
 
                             <h4><strong>Enter Number Of Pizza:</strong></h4>
-                            <input type="number" id="pizza_no" name="pizza_no" value="pizza_no" placeholder="Pieces Of pizza needed.." required>
+                            <input type="number" id="pizza_no" name="pizza_no" value="1" placeholder="Pieces Of pizza needed.." required>
 
                             <h4><strong>Select Your Mode of Delivery:-</strong></h4>
                             <input type="radio" id="hme" name="delivery" value="home">Home Delivery.
@@ -281,7 +285,7 @@
             
             <div class="col-md-5">
                 <div id="summary">
-                    <h4><strong>Your Order Summary:...</strong></h4>
+                    <h4><strong>Your Order Summary With Price for each:...</strong></h4>
                     <table class="table">
                         <thead>
                             <tr>
@@ -297,21 +301,12 @@
                         <tbody>
                             <tr class="table-primary">
                                 <td id="pizzaname"></td>
-                                <td id="pizzasize"></td>
+                                <td id="sizePrice"></td>
                                 <td id="toppingname"></td>
                                 <td id="crustname"></td>
                                 <td id="mode"></td>
-                                <td id="pieces"></td>
-                                <td id="urtotals"></td>
-                            </tr>
-                            <tr class="table-primary">
-                                <td id="pizzaname"></td>
-                                <td id="pizzasize"></td>
-                                <td id="toppingname"></td>
-                                <td id="crustname"></td>
-                                <td id="mode"></td>
-                                <td id="pieces"></td>
-                                <td id="urtotals"></td>
+                                <td id="pieces"></td> 
+                                <td id="urtotals"></td> 
                             </tr>
                             
                         </tbody>
