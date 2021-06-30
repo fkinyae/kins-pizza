@@ -360,10 +360,10 @@ li {
     }
   }
   footer {
-      background-color: aqua;
+      background-color: black;
       height: 15px;
       font-family: 'Benne', serif;
-      color: black;
+      color: white;
       text-align: center;
       position: fixed;
       left: 0;
