@@ -161,10 +161,12 @@ $().ready(function(){
             switch(delivery) {
                 case "home":
                     delivery_price = 100;
-                    prompt("enter location");
+                    let location = prompt("Please enter your location:", "location.....");
+                    alert("Your order will be delivered at " + location + " in 30 minutes. Thankyou.");
                     break;
                     case "pickup":
                         delivery_price = 0;
+                        alert("Please check the map to find our exact location...welcome!");
                         break;
                         default:
                             delivery_price = 0;
@@ -187,20 +189,6 @@ $().ready(function(){
          $("#pieces").html( $('#pizza_no').val());
          $("#mode").html(deliv);
          $("#urtotals").html(checkoutTotal);
-
-
-
-
-
-
-
-           /*  $("#pizzasize").html( $("#size option:selected").val());
-            $("#crustname").html( $("#crust option:selected").val());
-            $("#pieces").html( $('#pizza_no').val()); 
-            $("#mode").html( $('input[name="delivery"]:checked').val());
-            $("#urtotals").html(checkoutTotal);
-            $("#urprice").html(pizza_price); */
-
 
 
         });
