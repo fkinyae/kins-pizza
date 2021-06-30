@@ -14,8 +14,8 @@ function myPizza(pizza, size, topping, crust, delivery, total) {
 
 $().ready(function(){
     $(function () {
-        $('#summary').hide();
-
+         $('#summary').hide();
+ 
 //Get the user input values in each section;
         $('#btn-submit').click(function(event) {
             event.preventDefault();
@@ -162,6 +162,7 @@ $().ready(function(){
             switch(delivery) {
                 case "home":
                     delivery_price = 100;
+                    prompt("enter location");
                     break;
                     case "pickup":
                         delivery_price = 0;
@@ -174,8 +175,13 @@ $().ready(function(){
             let total2 = total * number;
             let checkoutTotal = total2 + delivery_price;
 
-            return checkoutTotal;
-
+            $("#pizzaname").html( $("#pizzas option:selected").val());
+            $("#pizzasize").html( $("#size option:selected").val());
+            $("#toppingname").html( $("#topping option:selected").val());
+            $("#crustname").html( $("#crust option:selected").val());
+            $("#pieces").html( $('#pizza_no').val());
+            $("#mode").html( $('input[name="delivery"]:checked').val());
+            $("#urtotals").html(checkoutTotal);
 
         });
         $("button#btn-submit").click(function(){ 
