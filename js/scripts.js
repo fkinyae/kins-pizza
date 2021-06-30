@@ -19,7 +19,6 @@ $().ready(function(){
 //Get the user input values in each section;
         $('#btn-submit').click(function(event) {
             event.preventDefault();
-
             let pizza = $("#pizzas option:selected").val();
             let size = $("#size option:selected").val();
             let topping = $("#topping option:selected").val();
@@ -39,7 +38,7 @@ $().ready(function(){
                     }
                     else {
                         pizza_price = 1150;
-                        alert("crust is" + pizza_price);
+                
 
                     }
                     
@@ -175,18 +174,39 @@ $().ready(function(){
             let total2 = total * number;
             let checkoutTotal = total2 + delivery_price;
 
-            $("#pizzaname").html( $("#pizzas option:selected").val());
-            $("#pizzasize").html( $("#size option:selected").val());
-            $("#toppingname").html( $("#topping option:selected").val());
+            let size_price =  ( $("#size option:selected").val() +" - "+ pizza_price);
+            let cru_price = (  $("#crust option:selected").val() +" - "+ crust_price);
+            let top_price = ( $("#topping option:selected").val() +" - "+ topping_price);
+            let deliv = ( $('input[name="delivery"]:checked').val() +" - "+ delivery_price)
+
+
+         $("#pizzaname").html( $("#pizzas option:selected").val());
+         $("#sizePrice").html(size_price);
+         $("#crustname").html(cru_price);
+         $("#toppingname").html(top_price);
+         $("#pieces").html( $('#pizza_no').val());
+         $("#mode").html(deliv);
+         $("#urtotals").html(checkoutTotal);
+
+
+
+
+
+
+
+           /*  $("#pizzasize").html( $("#size option:selected").val());
             $("#crustname").html( $("#crust option:selected").val());
-            $("#pieces").html( $('#pizza_no').val());
+            $("#pieces").html( $('#pizza_no').val()); 
             $("#mode").html( $('input[name="delivery"]:checked').val());
             $("#urtotals").html(checkoutTotal);
+            $("#urprice").html(pizza_price); */
+
+
 
         });
         $("button#btn-submit").click(function(){ 
 
-            $("button#btn-submit").hide();
+        
             $('#summary').show();
 
 
