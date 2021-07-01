@@ -25,7 +25,7 @@ $().ready(function(){
             let crust = $("#crust option:selected").val();
             let delivery = $('input[name="delivery"]:checked').val(); //"home" or "pickup";
             let number = $('#pizza_no').val();
-
+            alert(crust);
 
             switch (pizza) {
                 case pizza = "periperi":
